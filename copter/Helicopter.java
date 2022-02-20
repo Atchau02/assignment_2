@@ -8,4 +8,7 @@ public class Helicopter extends Airplane {
     private int creationYear;
     private int passengerCapacity;
 
+
+    
+
 }
