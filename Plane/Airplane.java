@@ -62,11 +62,24 @@ public class Airplane {
 
     //equals method
     public boolean equals(Airplane othAirplane){
-        return this.brand == othAirplane.brand
-        && this.price == othAirplane.price
-        && this.horsepower == othAirplane.horsepower;
-    }
 
+        if(othAirplane == null){
+            return false;
+        }
+        
+        else if(getClass() != othAirplane.getClass()){
+            return false;
+        }
+        
+        else{
+            return this.brand == othAirplane.brand
+            && this.price == othAirplane.price
+            && this.horsepower == othAirplane.horsepower;
+        }
+        
+    }
+    
+    /* test driver
     public static void main(String[] args) {
         Airplane a1 = new Airplane();
         Airplane a2 = new Airplane("ASDF", 5000.0, 50);
@@ -80,7 +93,7 @@ public class Airplane {
 
         System.out.println(a1.equals(a2)); //false
         System.out.println(a2.equals(a3)); //true
-    }
+    } */
 
 }
 
