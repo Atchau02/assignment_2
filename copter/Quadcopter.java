@@ -38,13 +38,14 @@ public class Quadcopter extends Helicopter {
 
     //toString method
     public String toString(){
-        return "\nThe brand is: " + getBrand() + "."
+        return "\nThos is a quadcopter."
+        +"\nThe brand is: " + getBrand() + "."
         + "\nThe price is: " + getPrice() + "$."
         + "\nThe horsepower is: " + getHorsepower() + "."
         + "\nThe nb of cylinders is: " + cylinders + "."
         + "\nThe creation year is: " + creationYear + "."
         + "\nThe passenger capacity is: " + passengerCapacity + "."
-        + "\nThe max flying speed is: " + maxFlyingSpeed + "km/h.";
+        + "\nThe max flying speed is: " + maxFlyingSpeed + " km/h.";
     }
 
     //equals method

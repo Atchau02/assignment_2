@@ -60,7 +60,8 @@ public class Helicopter extends Airplane {
 
     //toString method
     public String toString(){
-        return "\nThe brand is: " + getBrand() + "."
+        return "\nThis is a helicopter."
+        +"\nThe brand is: " + getBrand() + "."
         + "\nThe price is: " + getPrice() + "$."
         + "\nThe horsepower is: " + getHorsepower() + "."
         + "\nThe nb of cylinders is: " + cylinders + "."

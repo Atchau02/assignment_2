@@ -40,7 +40,8 @@ public class Multirotor extends Helicopter {
 
     //toString method
     public String toString(){
-        return "\nThe brand is: " + getBrand() + "."
+        return "\nThis is a multirotor."
+        +"\nThe brand is: " + getBrand() + "."
         + "\nThe price is: " + getPrice() + "$."
         + "\nThe horsepower is: " + getHorsepower() + "."
         + "\nThe nb of cylinders is: " + getCylinders() + "."
@@ -72,7 +73,7 @@ public class Multirotor extends Helicopter {
 
     }
 
-    // test driver
+    /*test driver
     public static void main(String[] args) {
         Multirotor m1 = new Multirotor();
         Multirotor m2 = new Multirotor("ZXCV", 15, 23, 54, 1999, 50, 78);
@@ -86,6 +87,6 @@ public class Multirotor extends Helicopter {
 
         System.out.println(m1.equals(m2)); //false
         System.out.println(m2.equals(m3)); //true
-    } 
+    } */
     
 }

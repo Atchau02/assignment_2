@@ -55,7 +55,8 @@ public class Airplane {
 
     //toString method
     public String toString(){
-        return "\nThe brand is: " + brand + "."
+        return "\nThis is a plane."
+        +"\nThe brand is: " + brand + "."
         + "\nThe price is: " + price + "$."
         + "\nThe horsepower is: " + horsepower + ".";
     }
