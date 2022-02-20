@@ -4,9 +4,9 @@ import assignment_249.assignment_2.Plane.Airplane;
 
 public class Helicopter extends Airplane {
     
-    protected int cylinders;
-    protected int creationYear;
-    protected int passengerCapacity;
+    int cylinders;
+    int creationYear;
+    int passengerCapacity;
 
     //default constructor
     public Helicopter(){
@@ -61,7 +61,7 @@ public class Helicopter extends Airplane {
     //toString method
     public String toString(){
         return "\nThe brand is: " + getBrand() + "."
-        + "\nThe price is: " + getPrice() + "."
+        + "\nThe price is: " + getPrice() + "$."
         + "\nThe horsepower is: " + getHorsepower() + "."
         + "\nThe nb of cylinders is: " + cylinders + "."
         + "\nThe creation year is: " + creationYear + "."
@@ -69,23 +69,23 @@ public class Helicopter extends Airplane {
     }
 
     //equals method
-    public boolean equals(Helicopter otheHelicopter){
+    public boolean equals(Helicopter otherHelicopter){
 
-        if(otheHelicopter == null){
+        if(otherHelicopter == null){
             return false;
         }
         
-        else if(getClass() != otheHelicopter.getClass()){
+        else if(getClass() != otherHelicopter.getClass()){
             return false;
         }
         
         else{
-            return getBrand() == otheHelicopter.getBrand()
-            && getPrice() == otheHelicopter.getPrice()
-            && getHorsepower() == otheHelicopter.getHorsepower()
-            && this.cylinders == otheHelicopter.cylinders
-            && this.creationYear == otheHelicopter.creationYear
-            && this.passengerCapacity == otheHelicopter.passengerCapacity;
+            return getBrand() == otherHelicopter.getBrand()
+            && getPrice() == otherHelicopter.getPrice()
+            && getHorsepower() == otherHelicopter.getHorsepower()
+            && this.cylinders == otherHelicopter.cylinders
+            && this.creationYear == otherHelicopter.creationYear
+            && this.passengerCapacity == otherHelicopter.passengerCapacity;
         }
     
     }

@@ -56,25 +56,25 @@ public class Airplane {
     //toString method
     public String toString(){
         return "\nThe brand is: " + brand + "."
-        + "\nThe price is: " + price + "."
+        + "\nThe price is: " + price + "$."
         + "\nThe horsepower is: " + horsepower + ".";
     }
 
     //equals method
-    public boolean equals(Airplane othAirplane){
+    public boolean equals(Airplane otherAirplane){
 
-        if(othAirplane == null){
+        if(otherAirplane == null){
             return false;
         }
         
-        else if(getClass() != othAirplane.getClass()){
+        else if(getClass() != otherAirplane.getClass()){
             return false;
         }
         
         else{
-            return this.brand == othAirplane.brand
-            && this.price == othAirplane.price
-            && this.horsepower == othAirplane.horsepower;
+            return this.brand == otherAirplane.brand
+            && this.price == otherAirplane.price
+            && this.horsepower == otherAirplane.horsepower;
         }
         
     }
