@@ -48,17 +48,18 @@ public class UAV {
     }
 
     //equals method
-    public boolean equals(UAV otherUAV){
+    public boolean equals(Object otherObject){
 
-        if(otherUAV == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherUAV.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            UAV otherUAV = (UAV)otherObject;
             return this.weight == otherUAV.weight
             && this.price == otherUAV.price;
         }

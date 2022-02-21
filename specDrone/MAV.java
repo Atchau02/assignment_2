@@ -56,17 +56,18 @@ public class MAV extends UAV{
     }
 
     //equals method
-    public boolean equals(MAV otherMAV){
+    public boolean equals(Object otherObject){
 
-        if(otherMAV == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherMAV.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            MAV otherMAV = (MAV)otherObject;
             return this.weight == otherMAV.weight
             && this.price == otherMAV.price
             && this.model == otherMAV.model
@@ -75,7 +76,7 @@ public class MAV extends UAV{
         
     }
 
-    //test driver
+    /*test driver
     public static void main(String[] args) {
         MAV m1 = new MAV();
         MAV m2 = new MAV(13, 333, "model 22", 45);
@@ -89,6 +90,6 @@ public class MAV extends UAV{
 
         System.out.println(m1.equals(m2)); //false
         System.out.println(m2.equals(m3)); //true
-    } 
+    } */
 
 }

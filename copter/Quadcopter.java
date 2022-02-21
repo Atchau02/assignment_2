@@ -49,17 +49,18 @@ public class Quadcopter extends Helicopter {
     }
 
     //equals method
-    public boolean equals(Quadcopter otherQuadcopter){
+    public boolean equals(Object otherObject){
 
-        if(otherQuadcopter == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherQuadcopter.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            Quadcopter otherQuadcopter = (Quadcopter)otherObject;
             return getBrand() == otherQuadcopter.getBrand()
             && getPrice() == otherQuadcopter.getPrice()
             && getHorsepower() == otherQuadcopter.getHorsepower()

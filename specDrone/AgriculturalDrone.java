@@ -57,17 +57,18 @@ public class AgriculturalDrone extends UAV {
     }
 
     //equals method
-    public boolean equals(AgriculturalDrone otherAgriculturalDrone){
+    public boolean equals(Object otherObject){
 
-        if(otherAgriculturalDrone == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherAgriculturalDrone.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            AgriculturalDrone otherAgriculturalDrone = (AgriculturalDrone)otherObject;
             return this.weight == otherAgriculturalDrone.weight
             && this.price == otherAgriculturalDrone.price
             && this.brand == otherAgriculturalDrone.brand
@@ -76,7 +77,7 @@ public class AgriculturalDrone extends UAV {
         
     }
 
-    //test driver
+    /*test driver
     public static void main(String[] args) {
         AgriculturalDrone au1 = new AgriculturalDrone();
         AgriculturalDrone au2 = new AgriculturalDrone(20, 65464, "lmnop", 50);
@@ -90,7 +91,7 @@ public class AgriculturalDrone extends UAV {
 
         System.out.println(au1.equals(au2)); //false
         System.out.println(au2.equals(au3)); //true
-    } 
+    } */
 
 
 }

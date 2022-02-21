@@ -70,17 +70,18 @@ public class Helicopter extends Airplane {
     }
 
     //equals method
-    public boolean equals(Helicopter otherHelicopter){
+    public boolean equals(Object otherObject){
 
-        if(otherHelicopter == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherHelicopter.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            Helicopter otherHelicopter = (Helicopter)otherObject;
             return getBrand() == otherHelicopter.getBrand()
             && getPrice() == otherHelicopter.getPrice()
             && getHorsepower() == otherHelicopter.getHorsepower()

@@ -51,17 +51,18 @@ public class Multirotor extends Helicopter {
     }
 
    //equals method
-   public boolean equals(Multirotor otherMultirotor){
+   public boolean equals(Object otherObject){
 
-        if(otherMultirotor == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherMultirotor.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            Multirotor otherMultirotor = (Multirotor)otherObject;
             return getBrand() == otherMultirotor.getBrand()
             && getPrice() == otherMultirotor.getPrice()
             && getHorsepower() == otherMultirotor.getHorsepower()

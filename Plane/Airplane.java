@@ -62,17 +62,18 @@ public class Airplane {
     }
 
     //equals method
-    public boolean equals(Airplane otherAirplane){
+    public boolean equals(Object otherObject){
 
-        if(otherAirplane == null){
+        if(otherObject == null){
             return false;
         }
         
-        else if(getClass() != otherAirplane.getClass()){
+        else if(getClass() != otherObject.getClass()){
             return false;
         }
         
         else{
+            Airplane otherAirplane = (Airplane) otherObject;
             return this.brand == otherAirplane.brand
             && this.price == otherAirplane.price
             && this.horsepower == otherAirplane.horsepower;
