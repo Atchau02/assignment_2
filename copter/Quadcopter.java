@@ -38,7 +38,7 @@ public class Quadcopter extends Helicopter {
 
     //toString method
     public String toString(){
-        return "\nThos is a quadcopter."
+        return "\nThis is a quadcopter."
         +"\nThe brand is: " + getBrand() + "."
         + "\nThe price is: " + getPrice() + "$."
         + "\nThe horsepower is: " + getHorsepower() + "."
