@@ -113,7 +113,7 @@ public class driverPart1 {
         System.out.println("---------------------------------------------------");
         System.out.println("Finding the most expensive and least expensive UAV.");
         
-        Object[] arrayWithUAV = {a1,a2,a3,h1,h2,h3,q1,q2,q3,m1,m2,m3,u1,u2,ag1,ag2,m1,m2};
+        Object[] arrayWithUAV = {a1,a2,a3,h1,h2,h3,q1,q2,q3,m1,m2,m3,u1,u2,ag1,ag2,ma1,ma2};
 
         Airplane a4 = new Airplane();
         Airplane a5 = new Airplane();
