@@ -1,22 +1,44 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 1
+// Written by: Anh Tu Chau 40207791
+
 package assignment_249.assignment_2.copter;
 
 public class Quadcopter extends Helicopter {
     
     private int maxFlyingSpeed;
 
-    //default constructor
+    /**
+     * default constructor
+     */
     public Quadcopter(){
         super();
         this.maxFlyingSpeed = 7500;
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor
+     * @param brand String the brand
+     * @param price double the price
+     * @param horsepower int the horsepower
+     * @param cylinders int nmb of cylinders
+     * @param creationYear int year of creation
+     * @param passengerCapacity int the passenger capacity
+     * @param maxFlyingSpeed int the max flying speed
+     */
     public Quadcopter(String brand, double price, int horsepower, int cylinders, int creationYear, int passengerCapacity, int maxFlyingSpeed){
         super(brand, price, horsepower, cylinders, creationYear, passengerCapacity);
         this.maxFlyingSpeed = maxFlyingSpeed;
     }
 
-    //copy constructor
+    /**
+     * copy constructor
+     * @param p the quadcopter that is being copied
+     */
     public Quadcopter(Quadcopter p){
         setBrand(p.getBrand());
         setPrice(p.getPrice());
@@ -36,7 +58,10 @@ public class Quadcopter extends Helicopter {
         this.maxFlyingSpeed = maxFlyingSpeed;
     }
 
-    //toString method
+    /**
+     * to String method
+     * @return the info of the quadcopter
+     */
     public String toString(){
         return "\nThis is a quadcopter."
         +"\nThe brand is: " + getBrand() + "."
@@ -48,7 +73,11 @@ public class Quadcopter extends Helicopter {
         + "\nThe max flying speed is: " + maxFlyingSpeed + " km/h.";
     }
 
-    //equals method
+    /**
+     * Compares a quadcopter and another object
+     * @param Object the other object
+     * @return boolean of the equality
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 1
+// Written by: Anh Tu Chau 40207791 
+
 package assignment_249.assignment_2.specDrone;
 
 import assignment_249.assignment_2.drone.UAV;
@@ -7,21 +15,32 @@ public class MAV extends UAV{
     private String model;
     private double size;
     
-    //default constructor
+    /**
+     * default constructor
+     */
     public MAV(){
         super();
         this.model = "model 0";
         this.size = 5.0;
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor
+     * @param weight double the weight
+     * @param price double the price
+     * @param model String the model
+     * @param size double the size
+     */
     public MAV(double weight, double price, String model, double size){
         super(weight, price);
         this.model = model;
         this.size = size;
     }
 
-    //copy constructor
+    /**
+     * copy constructor
+     * @param p the MAV being copied
+     */
     public MAV(MAV p){
         this.weight = p.weight;
         this.price = p.price;
@@ -46,7 +65,10 @@ public class MAV extends UAV{
         this.size = size;
     }
 
-    //toString method
+    /**
+     * to String method
+     * @return String the info of the MAV
+     */
     public String toString(){
         return "\nThis is a MAV."
         +"\nThe weight is: " + weight + " lbs."
@@ -55,7 +77,11 @@ public class MAV extends UAV{
         + "\nThe size is: " + size + " units";
     }
 
-    //equals method
+    /**
+     * compares a MAV to another object
+     * @param the other object
+     * @return boolean of the equality
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

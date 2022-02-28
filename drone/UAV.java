@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 1
+// Written by: Anh Tu Chau 40207791 
+
 package assignment_249.assignment_2.drone;
 
 public class UAV {
@@ -5,19 +13,28 @@ public class UAV {
     protected double weight;
     protected double price;
 
-    //default constructor
+    /**
+     * default constructor
+     */
     public UAV(){
         this.weight = 50.0;
         this.price = 25000.0; 
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor
+     * @param weight double the weight
+     * @param price double the price
+     */
     public UAV(double weight, double price){
         this.weight = weight;
         this.price = price;
     }
 
-    //copy constructor
+    /**
+     * copy constructor
+     * @param p the UAV being copied
+     */
     public UAV(UAV p){
         this.weight = p.weight;
         this.price = p.price;
@@ -40,14 +57,21 @@ public class UAV {
         this.price = price;
     }
 
-    //toString method
+    /**
+     * to String methodz
+     * @return String of the info of the UAV
+     */
     public String toString(){
         return "\nThis is a UAV."
         +"\nThe weight is: " + weight + " lbs."
         + "\nThe price is: " + price + "$.";
     }
 
-    //equals method
+    /**
+     * compares a UAV with another object
+     * @param Object the other object
+     * @return boolean of the equality
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

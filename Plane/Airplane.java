@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+ // part: 1
+ // Written by: Anh Tu Chau 40207791
+
 package assignment_249.assignment_2.Plane;
 
 public class Airplane {
@@ -6,21 +14,31 @@ public class Airplane {
     private double price;
     private int horsepower;
     
-    //default constructor
+    /**
+     * default constructor
+     */
     public Airplane(){
         brand = "Boeing";
         price = 10000000;
         horsepower = 50000;
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor  
+     * @param brand String: the brand of the plane
+     * @param price double: the price of the plane
+     * @param horsepower int: horsepower of the plane
+     */
     public Airplane(String brand, double price, int horsepower){
         this.brand = brand;
         this.price = price;
         this.horsepower = horsepower;
     }
 
-    //copy constructor
+    /**
+     * Copy constructor
+     * @param p Airplane that gets copied
+     */
     public Airplane(Airplane p){
         this.brand = p.brand;
         this.price = p.price;
@@ -28,7 +46,6 @@ public class Airplane {
     }
 
     //getters and setter
-
     public String getBrand() {
         return brand;
     }
@@ -53,7 +70,10 @@ public class Airplane {
         this.horsepower = horsepower;
     }
 
-    //toString method
+    /**
+     * to String method
+     * @return String info of the airplane
+     */
     public String toString(){
         return "\nThis is a plane."
         +"\nThe brand is: " + brand + "."
@@ -61,7 +81,11 @@ public class Airplane {
         + "\nThe horsepower is: " + horsepower + ".";
     }
 
-    //equals method
+    /**
+     * compares an object to an airplane
+     * @param Object the other object
+     * @return boolean the equality
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

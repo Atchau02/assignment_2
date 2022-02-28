@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 1
+// Written by: Anh Tu Chau 40207791
+
 package assignment_249.assignment_2.copter;
 
 import assignment_249.assignment_2.Plane.Airplane;
@@ -8,7 +16,9 @@ public class Helicopter extends Airplane {
     int creationYear;
     int passengerCapacity;
 
-    //default constructor
+    /**
+     * default constructor
+     */
     public Helicopter(){
         super();
         this.cylinders = 6;
@@ -16,7 +26,15 @@ public class Helicopter extends Airplane {
         this.passengerCapacity = 8;
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor
+     * @param brand String: the brand
+     * @param price double: the price
+     * @param horsepower int: the horsepower
+     * @param cylinders int: nmb of cylinders
+     * @param creationYear int: the year of creation
+     * @param passengerCapacity int: the passenger capacity
+     */
     public Helicopter(String brand, double price, int horsepower, int cylinders, int creationYear, int passengerCapacity){
         super(brand, price, horsepower);
         this.cylinders = cylinders;
@@ -24,7 +42,10 @@ public class Helicopter extends Airplane {
         this.passengerCapacity = passengerCapacity;
     }
 
-    //copy constructor
+    /**
+     * copy constructor
+     * @param p the helicopter that is copied
+     */
     public Helicopter(Helicopter p){
         setBrand(p.getBrand());
         setPrice(p.getPrice());
@@ -35,9 +56,11 @@ public class Helicopter extends Airplane {
     }
 
     //getters and setters
+
     public int getCylinders() {
         return cylinders;
     }
+
     public void setCylinders(int cylinders) {
         this.cylinders = cylinders;
     }
@@ -58,7 +81,10 @@ public class Helicopter extends Airplane {
         this.passengerCapacity = passengerCapacity;
     }
 
-    //toString method
+    /**
+     * to String method
+     * @return String info of the helicopter
+     */
     public String toString(){
         return "\nThis is a helicopter."
         +"\nThe brand is: " + getBrand() + "."
@@ -69,7 +95,11 @@ public class Helicopter extends Airplane {
         + "\nThe passenger capacity is: " + passengerCapacity + ".";
     }
 
-    //equals method
+    /**
+     * compares an object to a helicopter
+     * @param Object the other object
+     * @return boolean of the equality
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

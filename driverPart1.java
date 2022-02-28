@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 1
+// Written by: Anh Tu Chau 40207791
+
 package assignment_249.assignment_2;
 import assignment_249.assignment_2.Plane.Airplane;
 import assignment_249.assignment_2.copter.*;
@@ -7,6 +15,10 @@ import assignment_249.assignment_2.specDrone.*;
 
 public class driverPart1 {
 
+    /**
+     * finds the least and most expensive UAVs of this array
+     * @param theArray
+     */
     private static void findLeastAndMostExpensiveUAV(Object[] theArray){
         UAV mostExpensive = new UAV(0, -1);
         UAV leastExpensive = new UAV(0, 999999999);
@@ -34,7 +46,7 @@ public class driverPart1 {
 
         //no uav
         if(nbOfUAV == 0){
-            System.out.println("There is no UAV int this array.");
+            System.out.println("There is no UAV in this array.");
         }
 
         //uav in array

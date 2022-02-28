@@ -1,5 +1,12 @@
-package assignment_249.assignment_2.specDrone;
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
 
+// part: 1
+// Written by: Anh Tu Chau 40207791
+
+package assignment_249.assignment_2.specDrone;
 
 import assignment_249.assignment_2.drone.UAV;
 
@@ -8,21 +15,32 @@ public class AgriculturalDrone extends UAV {
     private String brand;
     private int carryCapacity;
 
-    //default constructor
+    /**
+     * default constructor
+     */
     public AgriculturalDrone(){
         super();
         this.brand = "UAVbrand";
         this.carryCapacity = 50;
     }
 
-    //parametrized constructor
+    /**
+     * parametrized constructor
+     * @param weight double the weight
+     * @param price double the price
+     * @param brand String the brand
+     * @param carryCapacity int the carry capacity
+     */
     public AgriculturalDrone(double weight, double price, String brand, int carryCapacity){
         super(weight, price);
         this.brand = brand;
         this.carryCapacity = carryCapacity;
     }
 
-    //copy constructor
+    /**
+     * copy constructor
+     * @param p the agricultural drone being copied
+     */
     public AgriculturalDrone(AgriculturalDrone p){
         this.weight = p.weight;
         this.price = p.price;
@@ -47,7 +65,10 @@ public class AgriculturalDrone extends UAV {
         this.carryCapacity = carryCapacity;
     }
 
-    //toString method
+    /**
+     * to String method
+     * @return String the info of the agricultural drone
+     */
     public String toString(){
         return "\nThis is an agricultural drone."
         +"\nThe weight is: " + weight + " lbs."
@@ -56,7 +77,10 @@ public class AgriculturalDrone extends UAV {
         + "\nThe carry capacity is: " + carryCapacity + " lbs.";
     }
 
-    //equals method
+    /**
+     * compares an agricultural drone with another object
+     * @param Object the other object
+     */
     public boolean equals(Object otherObject){
 
         if(otherObject == null){

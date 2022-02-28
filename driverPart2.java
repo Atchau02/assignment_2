@@ -1,3 +1,11 @@
+/**
+ * @author Anh Tu Chau
+ * @version 1
+ */
+
+// part: 2
+// Written by: Anh Tu Chau 40207791 
+
 package assignment_249.assignment_2;
 import assignment_249.assignment_2.Plane.Airplane;
 import assignment_249.assignment_2.copter.*;
@@ -8,6 +16,11 @@ import assignment_249.assignment_2.specDrone.*;
 
 public class driverPart2 {
 
+    /**
+     * creates a copy of an array of flying objects
+     * @param theArray the array being copied
+     * @return the copy array
+     */
     public static Object[] copyFlyingObjects(Object[] theArray){
         
         
@@ -49,7 +62,6 @@ public class driverPart2 {
         
         AgriculturalDrone ag1 = new AgriculturalDrone();
         AgriculturalDrone ag2 = new AgriculturalDrone(20, 65464, "lmnop", 50);
-        AgriculturalDrone ag3 = new AgriculturalDrone(ag2);
 
         MAV ma1 = new MAV();
         MAV ma2 = new MAV(13, 333, "model 22", 45);
@@ -57,6 +69,8 @@ public class driverPart2 {
         Object[] arrayWithUAV = {a1,a2,a3,h1,h2,h3,q1,q2,q3,m1,m2,m3,u1,u2,ag1,ag2,ma1,ma2};
         
         Object[] theCopy = copyFlyingObjects(arrayWithUAV);
+
+        System.out.println("Welcome to the part 2 driver made by Anh Tu Chau.\n");
 
         System.out.println("This is the original array.");
         for(int i = 0; i < arrayWithUAV.length; i++){
@@ -69,6 +83,7 @@ public class driverPart2 {
             System.out.println(theCopy[i]);
         }
         
+        System.out.println("\nThanks for using driver part 2.");
     }
     
 }
